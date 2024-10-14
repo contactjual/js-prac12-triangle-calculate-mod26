@@ -18,6 +18,17 @@ function calculateTriangleArea() {
     // disiplay triangle area:
     const triangleAreaDisplay = document.getElementById('triangle-area');
     triangleAreaDisplay.innerText = area;
+
+
+
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('triangle-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Triangle new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
 }
 
 
@@ -38,6 +49,15 @@ function calculateRectangleArea() {
     const RectangleAreaDisplay = document.getElementById('Rectangle-area');
     RectangleAreaDisplay.innerText = area;
 
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('rectangle-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Rectangle new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
+
 }
 
 
@@ -57,6 +77,15 @@ function calculateParallelogramArea() {
 
     const AreaDisplay = document.getElementById('parallelogram-area');
     AreaDisplay.innerText = area;
+
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('paralle-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Parallelogram new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
 }
 
 
@@ -76,6 +105,15 @@ function calculateRhombusArea() {
 
     const AreaDisplay = document.getElementById('rhombus-area');
     AreaDisplay.innerText = area;
+
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('rhombus-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Rhombus new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
 }
 
 
@@ -95,6 +133,15 @@ function calculatePentagonArea() {
 
     const AreaDisplay = document.getElementById('pentagon-area');
     AreaDisplay.innerText = area;
+
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('pentagon-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Pentagon new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
 }
 
 
@@ -114,6 +161,15 @@ function calculateEllipseArea() {
 
     const AreaDisplay = document.getElementById('ellipse-area');
     AreaDisplay.innerText = area;
+
+
+
+    // set value inside the Area calculation
+    const mainText = document.getElementById('ellipse-result');
+    const simpleUl = document.getElementById('simple-ul');
+    const newList = document.createElement('li');
+    newList.innerText = 'Ellipse new ' + mainText.innerText;
+    simpleUl.appendChild(newList)
 }
 
 
@@ -137,15 +193,22 @@ function getInputValueById(YourIdName) {
     return value;
 }
 
-function setInnerTextById(elementIdName, area){
+function setInnerTextById(elementIdName, area) {
     const element = document.getElementById(elementIdName);
-    element.innerText= area;
+    element.innerText = area;
 }
 
 // short-2 
-function calculateCircleArea(){
+function calculateCircleArea() {
     const x = getInputValueById('your-id-name');
     const y = getInputValueById('your-others-id-name');
-    const area = 3.1416*x*y;
+    const area = 3.1416 * x * y;
     setInnerTextById('id-name', area)
 }
+
+
+
+
+
+
+
