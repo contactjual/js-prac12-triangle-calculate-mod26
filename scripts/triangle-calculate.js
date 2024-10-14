@@ -43,12 +43,12 @@ function calculateRectangleArea() {
 
 // Parallelogram
 function calculateParallelogramArea() {
-    
+
     const XInput = document.getElementById('parallelogram-x');
     const inputXValue = XInput.value;
     const X = parseFloat(inputXValue);
 
-    
+
     const YInput = document.getElementById('parallelogram-y');
     const inputYValue = YInput.value;
     const Y = parseFloat(inputYValue);
@@ -62,12 +62,12 @@ function calculateParallelogramArea() {
 
 // Rhombus
 function calculateRhombusArea() {
-    
+
     const XInput = document.getElementById('rhombus-x');
     const inputXValue = XInput.value;
     const X = parseFloat(inputXValue);
 
-    
+
     const YInput = document.getElementById('rhombus-y');
     const inputYValue = YInput.value;
     const Y = parseFloat(inputYValue);
@@ -81,12 +81,12 @@ function calculateRhombusArea() {
 
 // Pentagon
 function calculatePentagonArea() {
-    
+
     const XInput = document.getElementById('pentagon-x');
     const inputXValue = XInput.value;
     const X = parseFloat(inputXValue);
 
-    
+
     const YInput = document.getElementById('pentagon-y');
     const inputYValue = YInput.value;
     const Y = parseFloat(inputYValue);
@@ -100,12 +100,12 @@ function calculatePentagonArea() {
 
 // Ellipse
 function calculateEllipseArea() {
-    
+
     const XInput = document.getElementById('ellipse-x');
     const inputXValue = XInput.value;
     const X = parseFloat(inputXValue);
 
-    
+
     const YInput = document.getElementById('ellipse-y');
     const inputYValue = YInput.value;
     const Y = parseFloat(inputYValue);
@@ -114,4 +114,38 @@ function calculateEllipseArea() {
 
     const AreaDisplay = document.getElementById('ellipse-area');
     AreaDisplay.innerText = area;
+}
+
+
+
+// short-1 code using function ---- this is perfect
+
+function calculatePantagonArea() {
+    const x = getInputValueById('somthingIsIdX');
+    const y = getInputValueById('somthingIsIdY');
+
+    const area = 0.5 * x * y;
+    setInnerTextById('somthing', area);
+}
+
+
+
+function getInputValueById(YourIdName) {
+    const inputField = document.getElementById(YourIdName);
+    const inputValueText = inputField.value;
+    const value = parseFloat(inputValueText);
+    return value;
+}
+
+function setInnerTextById(elementIdName, area){
+    const element = document.getElementById(elementIdName);
+    element.innerText= area;
+}
+
+// short-2 
+function calculateCircleArea(){
+    const x = getInputValueById('your-id-name');
+    const y = getInputValueById('your-others-id-name');
+    const area = 3.1416*x*y;
+    setInnerTextById('id-name', area)
 }
