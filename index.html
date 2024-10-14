@@ -10,7 +10,7 @@
 </head>
 
 <style>
-    header{
+    header {
         background-color: rgb(39, 56, 70);
         margin: 0px 0 30px 0;
         display: flex;
@@ -19,15 +19,24 @@
         padding: 10px;
         border-radius: 10px;
     }
+
     header .text h1 {
         font-size: 40px;
     }
+
     header .text h2 {
         font-size: 23px;
     }
+
     header .btn {
         padding: 0 35px;
-        background-color: rgb(50, 50, 50);
+        background-color: rgb(100, 113, 255);
+        color: black;
+        border: none;
+    }
+
+    header .btn:hover {
+        background-color: rgb(100, 113, 255, .85);
     }
 </style>
 
@@ -49,7 +58,7 @@
                 <!-- Triangle card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/triangle.png" />
+                        <img src="images/triangle.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Triangle</h2>
@@ -63,7 +72,8 @@
                         </div>
                         <div>
                             <p id="triangle-result" class="text-2xl">Area: <span id="triangle-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -73,7 +83,7 @@
                 <!-- Rectangle card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/rectangle.png" />
+                        <img src="images/rectangle.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Rectangle</h2>
@@ -87,7 +97,8 @@
                         </div>
                         <div>
                             <p id="rectangle-result" class="text-2xl">Area: <span id="Rectangle-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -97,7 +108,7 @@
                 <!-- Parallelogram card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/parallelogram.png" />
+                        <img src="images/parallelogram.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Parallelogram</h2>
@@ -112,7 +123,8 @@
                         </div>
                         <div>
                             <p id="paralle-result" class="text-2xl">Area: <span id="parallelogram-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateParallelogramArea()"
@@ -123,7 +135,7 @@
                 <!-- Rhombus card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/rhombus.png" />
+                        <img src="images/rhombus.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Rhombus</h2>
@@ -136,7 +148,8 @@
                         </div>
                         <div>
                             <p id="rhombus-result" class="text-2xl">Area: <span id="rhombus-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
@@ -146,7 +159,7 @@
                 <!-- Pentagon card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/pentagon.png" />
+                        <img src="images/pentagon.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Pentagon</h2>
@@ -159,7 +172,8 @@
                         </div>
                         <div>
                             <p id="pentagon-result" class="text-2xl">Area: <span id="pentagon-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
@@ -169,7 +183,7 @@
                 <!-- Ellipse card  -->
                 <div class="card card-compact bg-base-100 w-96 shadow-xl">
                     <figure>
-                        <img src="/geometry-genius-resources-main/images/ellipse.png" />
+                        <img src="images/ellipse.png" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title m-auto">Ellipse</h2>
@@ -182,7 +196,8 @@
                         </div>
                         <div>
                             <p id="ellipse-result" class="text-2xl">Area: <span id="ellipse-area">0</span>
-                                <span>cm</span><sup>2</sup></p>
+                                <span>cm</span><sup>2</sup>
+                            </p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
